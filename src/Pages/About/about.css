@@ -1,0 +1,92 @@
+.about-page {
+  padding: 20px 50px;
+  display: flex;
+  gap: 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.work-educate {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.about {
+  width: 50%;
+}
+.about h1,
+.work-educate h1,
+.strengths h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+}
+.about-content,
+.work-content {
+  font-size: 1rem;
+  text-align: justify;
+}
+.about-me,
+.strengths-data {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.about-me-item, .strengths-item {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  flex-wrap: wrap;
+  padding: 10px 5px;
+  flex: 1 0 200px;
+  backdrop-filter: blur(10px);
+  border: 2px solid #8585858b;
+}
+.about-me-item span {
+  font-size: 1rem;
+  font-weight: 700;
+}
+.work-data,
+.education-data,
+.eduaction-data {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 30px;
+}
+.work-item,
+.eduaction-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+  flex-wrap: wrap;
+  padding: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid #8585858b;
+}
+
+.strengths {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.strengths-item{
+    justify-content: center;
+}
+
+@media screen and (max-width: 800px) {
+    .about-page{
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .work-educate, .about {
+        width: 100%;
+    }
+}

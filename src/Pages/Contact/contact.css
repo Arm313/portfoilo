@@ -1,0 +1,89 @@
+.contact {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px 20px 50px;
+}
+
+.contact-form {
+  max-width: 500px;
+  backdrop-filter: blur(8px);
+  padding: 20px 20px 50px;
+  border: 2px solid #8585858b;
+  margin-top: 10px;
+  border-radius: 10px;
+  z-index: -1;
+}
+.contact-form h1 {
+  text-align: center;
+  color: #e71d36;
+}
+.questions {
+  display: flex;
+  flex-direction: column;
+}
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 20px;
+}
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  outline: none;
+  border-color: transparent;
+  background: #5a5a5a8b;
+  color: #fff;
+  font-size: 18px;
+  caret-color: #e71d36;
+  border-radius: 10px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border: 2px solid #e71d36;
+}
+
+.contact-form button {
+  background: #e71d36;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+.contact-form button:hover {
+  background: #e71d3581;
+}
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contact-info-item {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  
+    padding: 10px;
+    z-index: -1;
+}
+
+.info-item-icon{
+    font-size: 20px;
+    border: 2px solid #8585858b;
+    padding: 10px;
+    backdrop-filter: blur(7px);
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 500px) {
+        .contact-info-item h2 {
+            font-size: 20px;
+        }
+}
