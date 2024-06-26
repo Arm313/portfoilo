@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/portfoilo/static/css/main.3444f717.css",
+    "main.js": "/portfoilo/static/js/main.6bbb69aa.js",
+    "static/media/arm.jpg": "/portfoilo/static/media/arm.c67c422f47f784b67a0c.jpg",
+    "static/media/react.svg": "/portfoilo/static/media/react.b4aadc0713bb11142756748e605f70bd.svg",
+    "static/media/github.svg": "/portfoilo/static/media/github.0bb80b8b9b816978d9b33261bd3b3c0b.svg",
+    "static/media/redux.svg": "/portfoilo/static/media/redux.59f428ebf1c8b3a3fcec9ee28b57c9da.svg",
+    "static/media/git.svg": "/portfoilo/static/media/git.03c2b63babaf05a6bcc1004a283802ee.svg",
+    "index.html": "/portfoilo/index.html",
+    "static/media/javascript.svg": "/portfoilo/static/media/javascript.7bb08cdbe94fc2dfc1b51be8c2dae551.svg",
+    "static/media/css.svg": "/portfoilo/static/media/css.cce1e71a67427e01caedeed1b01d4efa.svg",
+    "static/media/html.svg": "/portfoilo/static/media/html.0c8899975fbb5345002df9b408db0cc0.svg",
+    "main.3444f717.css.map": "/portfoilo/static/css/main.3444f717.css.map",
+    "main.6bbb69aa.js.map": "/portfoilo/static/js/main.6bbb69aa.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3444f717.css",
+    "static/js/main.6bbb69aa.js"
+  ]
+}
