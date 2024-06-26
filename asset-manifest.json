@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfoilo/static/css/main.3444f717.css",
-    "main.js": "/portfoilo/static/js/main.2a5e1d7a.js",
+    "main.js": "/portfoilo/static/js/main.45709aee.js",
     "static/media/arm.jpg": "/portfoilo/static/media/arm.c67c422f47f784b67a0c.jpg",
     "static/media/react.svg": "/portfoilo/static/media/react.b4aadc0713bb11142756748e605f70bd.svg",
     "static/media/github.svg": "/portfoilo/static/media/github.0bb80b8b9b816978d9b33261bd3b3c0b.svg",
@@ -12,10 +12,10 @@
     "static/media/css.svg": "/portfoilo/static/media/css.cce1e71a67427e01caedeed1b01d4efa.svg",
     "static/media/html.svg": "/portfoilo/static/media/html.0c8899975fbb5345002df9b408db0cc0.svg",
     "main.3444f717.css.map": "/portfoilo/static/css/main.3444f717.css.map",
-    "main.2a5e1d7a.js.map": "/portfoilo/static/js/main.2a5e1d7a.js.map"
+    "main.45709aee.js.map": "/portfoilo/static/js/main.45709aee.js.map"
   },
   "entrypoints": [
     "static/css/main.3444f717.css",
-    "static/js/main.2a5e1d7a.js"
+    "static/js/main.45709aee.js"
   ]
 }
