@@ -18,7 +18,7 @@ const Header = () => {
   };
   return (
     <header>
-      <Link to="/" className="logo">
+      <Link to="/portfoilo" className="logo">
         ARM
       </Link>
 
@@ -35,7 +35,7 @@ const Header = () => {
         </label>
       </div>
       <nav className={`${burgerMenu && "burgerActive"}`}>
-        <NavLink className="navItem" to="/" onClick={() => setBurgerMenu(false)}>
+        <NavLink className="navItem" to="/portfoilo" onClick={() => setBurgerMenu(false)}>
           Home
         </NavLink>
         <NavLink className="navItem" to="/about" onClick={() => setBurgerMenu(false)}>
