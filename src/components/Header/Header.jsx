@@ -38,13 +38,13 @@ const Header = () => {
         <NavLink className="navItem" to="/portfoilo" onClick={() => setBurgerMenu(false)}>
           Home
         </NavLink>
-        <NavLink className="navItem" to="/about" onClick={() => setBurgerMenu(false)}>
+        <NavLink className="navItem" to="/portfoilo/about" onClick={() => setBurgerMenu(false)}>
           About
         </NavLink>
-        <NavLink className="navItem" to="/skills" onClick={() => setBurgerMenu(false)}>
+        <NavLink className="navItem" to="/portfoilo/skills" onClick={() => setBurgerMenu(false)}>
           Skills
         </NavLink>
-        <NavLink className="navItem" to="/contact" onClick={() => setBurgerMenu(false)}>
+        <NavLink className="navItem" to="/portfoilo/contact" onClick={() => setBurgerMenu(false)}>
           Contact
         </NavLink>
       </nav>
