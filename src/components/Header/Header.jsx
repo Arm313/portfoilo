@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import "./header.css";
-import logo from "../../Images/b.png"
+import logo from "../../Images/b.png";
 
 const Header = () => {
   const [burgerMenu, setBurgerMenu] = useState(false);
@@ -39,13 +39,25 @@ const Header = () => {
         {/* <Link className="navItem" to="/portfoilo" onClick={() => setBurgerMenu(false)}>
           Home
         </Link> */}
-        <NavLink className="navItem" to="/portfoilo/about" onClick={() => setBurgerMenu(false)}>
-          About
+        <NavLink
+          className="navItem"
+          to="/portfoilo/about"
+          onClick={() => setBurgerMenu(false)}
+        >
+          Resume
         </NavLink>
-        <NavLink className="navItem" to="/portfoilo/skills" onClick={() => setBurgerMenu(false)}>
+        <NavLink
+          className="navItem"
+          to="/portfoilo/skills"
+          onClick={() => setBurgerMenu(false)}
+        >
           Skills
         </NavLink>
-        <NavLink className="navItem" to="/portfoilo/contact" onClick={() => setBurgerMenu(false)}>
+        <NavLink
+          className="navItem"
+          to="/portfoilo/contact"
+          onClick={() => setBurgerMenu(false)}
+        >
           Contact
         </NavLink>
       </nav>

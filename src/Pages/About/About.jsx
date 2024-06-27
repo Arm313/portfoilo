@@ -54,7 +54,7 @@ const About = () => {
           <div className="work-content">
             I worked with the team on the website "prozamki.com", which is
             written in React.js. I used Axios to communicate with the backend,
-            SCSS for the styles, Swipe.jsr for the slider, and Redux-toolkit to
+            SCSS for the styles, Swipe.js for the slider, and Redux-toolkit to
             manage project state.
           </div>
           <div className="work-data">
