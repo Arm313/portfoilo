@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfoilo/static/css/main.7c97f2a5.css",
-    "main.js": "/portfoilo/static/js/main.a417be06.js",
+    "main.css": "/portfoilo/static/css/main.be28d6d1.css",
+    "main.js": "/portfoilo/static/js/main.4bbb92f4.js",
     "static/media/Arman Babujyan.pdf": "/portfoilo/static/media/Arman Babujyan.dd5997cd7bcfffa97be5.pdf",
     "static/media/arm.jpg": "/portfoilo/static/media/arm.c67c422f47f784b67a0c.jpg",
     "static/media/b.png": "/portfoilo/static/media/b.8d5832aff409ad4d2c8b.png",
@@ -13,11 +13,11 @@
     "static/media/javascript.svg": "/portfoilo/static/media/javascript.7bb08cdbe94fc2dfc1b51be8c2dae551.svg",
     "static/media/css.svg": "/portfoilo/static/media/css.cce1e71a67427e01caedeed1b01d4efa.svg",
     "static/media/html.svg": "/portfoilo/static/media/html.0c8899975fbb5345002df9b408db0cc0.svg",
-    "main.7c97f2a5.css.map": "/portfoilo/static/css/main.7c97f2a5.css.map",
-    "main.a417be06.js.map": "/portfoilo/static/js/main.a417be06.js.map"
+    "main.be28d6d1.css.map": "/portfoilo/static/css/main.be28d6d1.css.map",
+    "main.4bbb92f4.js.map": "/portfoilo/static/js/main.4bbb92f4.js.map"
   },
   "entrypoints": [
-    "static/css/main.7c97f2a5.css",
-    "static/js/main.a417be06.js"
+    "static/css/main.be28d6d1.css",
+    "static/js/main.4bbb92f4.js"
   ]
 }
