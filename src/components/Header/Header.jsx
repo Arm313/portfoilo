@@ -2,9 +2,19 @@ import React, { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import "./header.css";
 import logo from "../../Images/b.png";
+import { useDispatch, useSelector } from "react-redux";
+import { changeLanguage, selectLang } from "../../store/languageSlice";
+import { languageData } from "../../Language/language";
+import amFlag from "../../Images/am.png"
+import enFlag from "../../Images/en.png"
+
 
 const Header = () => {
   const [burgerMenu, setBurgerMenu] = useState(false);
+  const dispatch = useDispatch();
+  const { language } = useSelector(selectLang);
+
+  const { header } = languageData[language];
 
   useEffect(() => {
     if (burgerMenu) {
@@ -36,30 +46,53 @@ const Header = () => {
         </label>
       </div>
       <nav className={`${burgerMenu && "burgerActive"}`}>
-        {/* <Link className="navItem" to="/portfoilo" onClick={() => setBurgerMenu(false)}>
-          Home
-        </Link> */}
         <NavLink
           className="navItem"
           to="/portfoilo/about"
           onClick={() => setBurgerMenu(false)}
         >
-          Resume
+          {header?.resume}
         </NavLink>
         <NavLink
           className="navItem"
           to="/portfoilo/skills"
           onClick={() => setBurgerMenu(false)}
         >
-          Skills
+          {header?.skills}
         </NavLink>
         <NavLink
           className="navItem"
           to="/portfoilo/contact"
           onClick={() => setBurgerMenu(false)}
         >
-          Contact
+          {header?.contact}
         </NavLink>
+
+        <div className="switchLang">
+          {language !== "en" ? (
+            <button
+              className="lang"
+              onClick={() => {
+                dispatch(changeLanguage("en"));
+                setBurgerMenu(false);
+              }}
+            >
+              <img src={enFlag} alt="" />
+              <span>Eng</span>
+            </button>
+          ) : (
+            <button
+              className="lang"
+              onClick={() => {
+                dispatch(changeLanguage("am"));
+                setBurgerMenu(false);
+              }}
+            >
+              <img src={amFlag} alt="" />
+              <span>հայ</span>
+            </button>
+          )}
+        </div>
       </nav>
     </header>
   );

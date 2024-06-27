@@ -1,5 +1,6 @@
 .contact {
   display: flex;
+  flex-direction: column-reverse;
   align-items: center;
   flex-wrap: wrap-reverse;
   justify-content: center;
@@ -71,6 +72,9 @@
   
     padding: 10px;
     z-index: -1;
+}
+.callPhone{
+  color: #e71d36;
 }
 
 .info-item-icon{

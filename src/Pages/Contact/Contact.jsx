@@ -2,8 +2,25 @@ import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import "./contact.css";
 import Swal from "sweetalert2";
+import { useSelector } from "react-redux";
+import { selectLang } from "../../store/languageSlice";
+import { languageData } from "../../Language/language";
 
 const Contact = () => {
+  const { language } = useSelector(selectLang);
+  const { contactPage } = languageData[language];
+
+  const {
+    title,
+    questions,
+    formName,
+    formEmail,
+    formPhone,
+    formMessage,
+    formButton,
+    sendTitle,
+  } = contactPage;
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -43,7 +60,7 @@ const Contact = () => {
           });
           Toast.fire({
             icon: "success",
-            title: "Message sent successfully!",
+            title: sendTitle,
           });
         },
         (error) => {
@@ -78,18 +95,15 @@ const Contact = () => {
   return (
     <div className="contact pages">
       <div className="contact-form">
-        <h1>Get in touch</h1>
-        <div className="question">
-          Have a question? Want to work together? Just want to say hi? I'd love
-          to hear from you!
-        </div>
+        <h1>{title}</h1>
+        <div className="question">{questions}</div>
         <form onSubmit={handleSubmit}>
           <input
             type="text"
             name="name"
             value={formData.name}
             onChange={handleChange}
-            placeholder="Name"
+            placeholder={formName}
             required
           />
           <input
@@ -97,7 +111,7 @@ const Contact = () => {
             name="email"
             value={formData.email}
             onChange={handleChange}
-            placeholder="Email"
+            placeholder={formEmail}
             required
           />
           <input
@@ -105,34 +119,30 @@ const Contact = () => {
             name="phone"
             value={formData.phone}
             onChange={handleChange}
-            placeholder="Phone"
+            placeholder={formPhone}
             required
           />
           <textarea
             name="message"
             value={formData.message}
             onChange={handleChange}
-            placeholder="Message"
+            placeholder={formMessage}
             rows={5}
             required
           ></textarea>
-          <button type="submit">Send Message</button>
+          <button type="submit">{formButton}</button>
         </form>
       </div>
-      <div className="contact-info">
+
+      <a href="tel:+374-33-31-33-12" className="callPhone">
         <div className="contact-info-item">
           <div className="info-item-icon">
             <i className="fas fa-phone"></i>
           </div>
+
           <h2>+374 33 313 312</h2>
         </div>
-        <div className="contact-info-item">
-          <div className="info-item-icon">
-            <i className="fa-regular fa-envelope"></i>
-          </div>
-          <h2>armbabujyan@gmail.com</h2>
-        </div>
-      </div>
+      </a>
     </div>
   );
 };

@@ -25,6 +25,7 @@
 .work-content {
   font-size: 1rem;
   text-align: justify;
+  backdrop-filter: blur(10px);
 }
 .about-me,
 .strengths-data {

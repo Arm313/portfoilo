@@ -6,7 +6,7 @@ header {
   padding: 18px 24px;
   color: inherit;
   width: 100%;
-  backdrop-filter: blur(5px);
+  /* backdrop-filter: blur(5px); */
   position: relative;
   z-index: 10;
 }
@@ -134,4 +134,27 @@ nav {
 
 .body-scroll {
   overflow: hidden;
+}
+
+.lang {
+  padding:  8px;
+  border-radius: 8px;
+  border: none;
+  /* border: 1px solid #bbbbbb; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  background: #e71d36;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all .2s;
+}
+.lang img{
+  width: 20px;
+  height: 20px;
+}
+.lang:hover {
+  background: #e71d358d;
 }

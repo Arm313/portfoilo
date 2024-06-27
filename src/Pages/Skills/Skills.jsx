@@ -7,11 +7,16 @@ import reactImg from "../../Images/react.svg";
 import reduxImg from "../../Images/redux.svg";
 import gitImg from "../../Images/git.svg";
 import githubImg from "../../Images/github.svg";
+import { useSelector } from "react-redux";
+import { languageData } from "../../Language/language";
+import { selectLang } from "../../store/languageSlice";
 
 const Skills = () => {
+  const { language } = useSelector(selectLang);
+  const { skillsTitle } = languageData[language];
   return (
     <div className="skills pages">
-      <h1>Skills</h1>
+      <h1>{skillsTitle}</h1>
 
       <div className="skills-list">
         <div className="skills-item">

@@ -3,20 +3,22 @@ import "./home.css";
 import MyImage from "../../Images/arm.jpg";
 import { Link } from "react-router-dom";
 import cv from "../../cv/Arman Babujyan.pdf";
+import { languageData } from "../../Language/language";
+import { useSelector } from "react-redux";
+import { selectLang } from "../../store/languageSlice";
 
 const Home = () => {
+  const { language } = useSelector(selectLang);
+  const { homepage } = languageData[language];
+
   return (
     <div className="homepage pages">
       <div className="description">
-        <p className="name">Front-end developer</p>
+        <p className="name">{homepage?.position}</p>
         <h1>
-          Hi, I'm <span className="name">Arman Babujyan</span>
+          {homepage?.title} <span className="name">{homepage?.name}</span>
         </h1>
-        <p>
-          I’m Junior Programmer offering excellent analytical skills and the
-          important ability to function well both independently and in
-          fast-paced team environments.
-        </p>
+        <p>{homepage?.description}</p>
 
         <div className="social-pages">
           <Link
@@ -48,7 +50,11 @@ const Home = () => {
             <i className="fa-brands fa-github"></i>
           </Link>
         </div>
-        <a href={cv} download="Arman Babujyan.pdf" className="download-btn pixel-corners">
+        <a
+          href={cv}
+          download="Arman Babujyan.pdf"
+          className="download-btn pixel-corners"
+        >
           <div className="button-content">
             <div className="svg-container">
               <svg
@@ -62,7 +68,7 @@ const Home = () => {
               </svg>
             </div>
             <div className="text-container">
-              <div className="text">Download CV</div>
+              <div className="text">{homepage?.download} CV</div>
             </div>
           </div>
         </a>
