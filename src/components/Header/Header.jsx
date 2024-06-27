@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import "./header.css";
+import logo from "../../Images/b.png"
 
 const Header = () => {
   const [burgerMenu, setBurgerMenu] = useState(false);
@@ -19,7 +20,7 @@ const Header = () => {
   return (
     <header>
       <Link to="/portfoilo" className="logo">
-        ARM
+        <img src={logo} alt="" />
       </Link>
 
       <div className="burgerMenu" onClick={(e) => toggleMenu(e)}>
@@ -35,9 +36,9 @@ const Header = () => {
         </label>
       </div>
       <nav className={`${burgerMenu && "burgerActive"}`}>
-        <NavLink className="navItem" to="/portfoilo" onClick={() => setBurgerMenu(false)}>
+        {/* <Link className="navItem" to="/portfoilo" onClick={() => setBurgerMenu(false)}>
           Home
-        </NavLink>
+        </Link> */}
         <NavLink className="navItem" to="/portfoilo/about" onClick={() => setBurgerMenu(false)}>
           About
         </NavLink>

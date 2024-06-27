@@ -44,6 +44,7 @@
   padding: 10px 5px;
   flex: 1 0 200px;
   backdrop-filter: blur(10px);
+  z-index: -1;
   border: 2px solid #8585858b;
 }
 .about-me-item span {
@@ -68,6 +69,7 @@
   padding: 10px;
   backdrop-filter: blur(10px);
   border: 2px solid #8585858b;
+  z-index: -1;
 }
 
 .strengths {
