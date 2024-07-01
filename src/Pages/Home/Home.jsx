@@ -49,6 +49,13 @@ const Home = () => {
           >
             <i className="fa-brands fa-github"></i>
           </Link>
+          <Link
+            target="_blank"
+            to="https://t.me/arm313"
+            className="social-item"
+          >
+            <i className="fa-brands fa-telegram"></i>
+          </Link>
         </div>
         <a
           href={cv}
