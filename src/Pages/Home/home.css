@@ -77,6 +77,9 @@
    .image {
     transform: translateY(0);
    }
+   .social-pages {
+    gap: 12px;
+   }
 }
 
 .download-btn {
