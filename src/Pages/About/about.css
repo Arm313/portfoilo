@@ -1,6 +1,8 @@
 .about-page {
   padding: 20px 50px;
   display: flex;
+  flex-direction: column;
+        align-items: center;
   gap: 40px;
   max-width: 1400px;
   margin: 0  auto 50px;
@@ -13,6 +15,10 @@
 }
 .about {
   width: 50%;
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
 }
 .about h1,
 .work-educate h1,
@@ -43,7 +49,7 @@
   gap: 3px;
   flex-wrap: wrap;
   padding: 10px 5px;
-  flex: 1 0 200px;
+  flex: 1 0 250px;
   backdrop-filter: blur(10px);
   z-index: -1;
   border: 2px solid #8585858b;
@@ -89,7 +95,10 @@
         align-items: center;
         padding: 20px;
     }
-    .work-educate, .about {
-        width: 100%;
-    }
+ 
+}
+@media screen and (max-width: 1200px) {
+  .work-educate, .about {
+    width: 90%;
+}
 }

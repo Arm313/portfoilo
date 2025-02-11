@@ -74,6 +74,11 @@ export const languageData = {
       educationTitle: "Education",
       workData: [
         {
+          title: "Web programming tutor",
+          company: "EJMIATSIN STATE COLLEGE",
+          date: "2024 - present",
+        },
+        {
           title: "Frontend Developer",
           company: "Codium Company",
           date: "2022 - 2023",
@@ -83,11 +88,7 @@ export const languageData = {
           company: "Codium Company",
           date: "2022 - present",
         },
-        {
-          title: "Web programming tutor",
-          company: "EJMIATSIN STATE COLLEGE NAMED AFTER VARDGES HAMAZASPYAN",
-          date: "2024 - present",
-        },
+     
       ],
       educationData: [
         {
@@ -196,7 +197,7 @@ export const languageData = {
       workData: [
         {
           title: "Web ծրագրավորման դասախոս",
-          company: "ԷՋՄԻԱԾՆԻ ՎԱՐԴԳԵՍ ՀԱՄԱԶԱՍՊՅԱՆԻ ԱՆՎԱՆ ՊԵՏԱԿԱՆ ՔՈԼԵՋ",
+          company: "ԷՋՄԻԱԾՆԻ ՊԵՏԱԿԱՆ ՔՈԼԵՋ",
           date: "2024 - հիմա",
         },
         {
