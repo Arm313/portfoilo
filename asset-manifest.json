@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/portfoilo/static/css/main.d992ede0.css",
-    "main.js": "/portfoilo/static/js/main.3b0ae855.js",
-    "static/media/Arman Babujyan.pdf": "/portfoilo/static/media/Arman Babujyan.dd5997cd7bcfffa97be5.pdf",
+    "main.js": "/portfoilo/static/js/main.093cdbf3.js",
+    "static/media/Arman Babujyan - hy.pdf": "/portfoilo/static/media/Arman Babujyan - hy.19346ebc4821aad3dce4.pdf",
+    "static/media/Arman Babujyan - en.pdf": "/portfoilo/static/media/Arman Babujyan - en.ced87ca1279b1fb3bd78.pdf",
     "static/media/arm.jpg": "/portfoilo/static/media/arm.c67c422f47f784b67a0c.jpg",
     "static/media/b.png": "/portfoilo/static/media/b.8d5832aff409ad4d2c8b.png",
     "static/media/react.svg": "/portfoilo/static/media/react.b4aadc0713bb11142756748e605f70bd.svg",
@@ -14,10 +15,10 @@
     "static/media/css.svg": "/portfoilo/static/media/css.cce1e71a67427e01caedeed1b01d4efa.svg",
     "static/media/html.svg": "/portfoilo/static/media/html.0c8899975fbb5345002df9b408db0cc0.svg",
     "main.d992ede0.css.map": "/portfoilo/static/css/main.d992ede0.css.map",
-    "main.3b0ae855.js.map": "/portfoilo/static/js/main.3b0ae855.js.map"
+    "main.093cdbf3.js.map": "/portfoilo/static/js/main.093cdbf3.js.map"
   },
   "entrypoints": [
     "static/css/main.d992ede0.css",
-    "static/js/main.3b0ae855.js"
+    "static/js/main.093cdbf3.js"
   ]
 }
