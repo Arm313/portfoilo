@@ -9,7 +9,7 @@ import Skills from "../Pages/Skills/Skills";
 
 const AppRouter = () => {
   return (
-      <Routes>
+      <Routes> 
         <Route path="/portfoilo" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />

@@ -2,7 +2,8 @@ import React from "react";
 import "./home.css";
 import MyImage from "../../Images/arm.jpg";
 import { Link } from "react-router-dom";
-import cv from "../../cv/Arman Babujyan.pdf";
+import cv from "../../cv/Arman Babujyan - en.pdf";
+import cvHy from "../../cv/Arman Babujyan - hy.pdf";
 import { languageData } from "../../Language/language";
 import { useSelector } from "react-redux";
 import { selectLang } from "../../store/languageSlice";
@@ -58,8 +59,8 @@ const Home = () => {
           </Link>
         </div>
         <a
-          href={cv}
-          download="Arman Babujyan.pdf"
+          href={`${language === "en" ? cv : cvHy}`}
+          download={`${language === "en" ? "Arman Babujyan-en.pdf" : "Arman Babujyan-hy.pdf"}`}
           className="download-btn pixel-corners"
         >
           <div className="button-content">

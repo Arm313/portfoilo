@@ -83,6 +83,11 @@ export const languageData = {
           company: "Codium Company",
           date: "2022 - present",
         },
+        {
+          title: "Web programming tutor",
+          company: "EJMIATSIN STATE COLLEGE NAMED AFTER VARDGES HAMAZASPYAN",
+          date: "2024 - present",
+        },
       ],
       educationData: [
         {
@@ -189,6 +194,11 @@ export const languageData = {
         "Ես թիմի հետ աշխատելով՝ պատրաստել եմ «prozamki.com» կայքը (ցավոք այն այլևս չի գործում), որը գրված է React js-ով: Ես օգտագործել եմ Axios-ը սերվերի հետ կապ հաստատելու համար, SCSS-ը՝ ոճերի, Swipe.js-ը՝ սլայդերի համար, և Redux-toolkit-ը՝ կայքի վիճակը (state) կառավարելու համար:",
       educationTitle: "Կրթություն",
       workData: [
+        {
+          title: "Web ծրագրավորման դասախոս",
+          company: "ԷՋՄԻԱԾՆԻ ՎԱՐԴԳԵՍ ՀԱՄԱԶԱՍՊՅԱՆԻ ԱՆՎԱՆ ՊԵՏԱԿԱՆ ՔՈԼԵՋ",
+          date: "2024 - հիմա",
+        },
         {
           title: "Frontend ծրագրավորող",
           company: "Codium ընկերություն",
